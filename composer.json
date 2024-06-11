@@ -1,0 +1,34 @@
+{
+    "name": "lenderkit/module-kosirik-test",
+    "description": "kosirik-test for LenderKit framework",
+    "homepage": "https://lenderkit.com/",
+    "license": "https://lenderkit.com/license",
+    "authors": [
+        {
+            "name": "LenderKit Team",
+            "email": "hello@lenderkit.com"
+        }
+    ],
+    "require": {
+        "lenderkit/core": ">=20.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LenderKit\\Modules\\KsaInvestorCategories\\": "core/",
+            "LenderKit\\Modules\\KsaInvestorCategories\\Admin\\": "admin/",
+            "LenderKit\\Modules\\KsaInvestorCategories\\Api\\": "api/",
+            "LenderKit\\Modules\\KsaInvestorCategories\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LenderKit\\Modules\\KsaInvestorCategories\\Providers\\KsaInvestorCategoriesModuleProvider"
+            ]
+        },
+        "lenderkit": {
+            "module": "LenderKit\\Modules\\KsaInvestorCategories\\KsaInvestorCategoriesModule"
+        }
+    },
+    "minimum-stability": "dev"
+}
